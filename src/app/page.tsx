@@ -4,7 +4,7 @@ import { useAgent } from "./context/agent";
 import { OTPInput } from "input-otp";
 
 export default function Home() {
-  const { agent, isLoggedIn, checkHandleAvailability, createAccount, sendEmailVerification, verifyEmail } = useAgent();
+  const { agent, isLoggedIn, checkHandleAvailability, sendEmailVerification, verifyEmail } = useAgent();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     username: "",
@@ -241,7 +241,7 @@ export default function Home() {
                 Enter your email
               </h1>
               <p className="text-lg text-white/80">
-                We'll use this to verify your account.
+                We&apos;ll use this to verify your account.
               </p>
             </div>
 
@@ -282,7 +282,7 @@ export default function Home() {
                 Create a password
               </h1>
               <p className="text-lg text-white/80">
-                Make sure it's secure.
+                Make sure it&apos;s secure.
               </p>
             </div>
 
@@ -372,7 +372,7 @@ export default function Home() {
               </button>
 
               <p className={footerTextStyles}>
-                Didn't receive the code? <button type="button" onClick={() => sendEmailVerification()} className="text-white/70 underline">Resend</button>
+                Didn&apos;t receive the code? <button type="button" onClick={() => sendEmailVerification()} className="text-white/70 underline">Resend</button>
               </p>
             </form>
           </div>
